@@ -1,0 +1,202 @@
+[
+  {
+    "instruction": "How to fix 'undefined: fmt.Printf' error in Go?",
+    "input": "main.go:4:12: undefined: fmt.Printf\n",
+    "output": "It looks like you are missing the 'fmt' package import. Add 'import \"fmt\"' at the beginning of your file to fix the issue."
+  },
+  {
+    "instruction": "How to fix 'cannot find package' error in Go?",
+    "input": "main.go:3:8: cannot find package \"mypackage\" in any of:\n\t/usr/local/go/src/mypackage (from $GOROOT)\n\t/path/to/workspace/src/mypackage (from $GOPATH)\n",
+    "output": "The error indicates that the specified package 'mypackage' could not be found. Make sure that the package is correctly imported and that the package directory exists in either the $GOROOT or $GOPATH."
+  },
+  {
+    "instruction": "How to fix 'unexpected newline' error in Go?",
+    "input": "main.go:5:2: syntax error: unexpected newline, expecting }\n",
+    "output": "The error suggests that there is a syntax error in your code, specifically an unexpected newline character. Check for any missing or misplaced braces or parentheses that might be causing the issue."
+  },
+  {
+    "instruction": "How to fix 'cannot use nil as type' error in Go?",
+    "input": "main.go:6:14: cannot use nil as type MyStruct in assignment\n",
+    "output": "The error occurs when you try to assign the 'nil' value to a variable of a specific type. To fix it, make sure that the variable is assigned a valid value or initialize it properly with a non-nil value."
+  },
+  {
+    "instruction": "How to fix 'use of undefined type' error in Go?",
+    "input": "main.go:5:6: use of undefined type MyStruct\n",
+    "output": "The error suggests that the type 'MyStruct' is not defined or imported in your code. Check if you have defined the type or if you need to import a package that declares the type."
+  },
+  {
+    "instruction": "How to fix 'cannot use <expression> as <type>' error in Go?",
+    "input": "main.go:5:10: cannot use x (type int) as type string in assignment\n",
+    "output": "The error occurs when you try to assign a value of one type to a variable of a different type. To fix it, either change the type of the variable or ensure that the assigned value is of the correct type."
+  },
+  {
+    "instruction": "How to fix 'undefined function' error in Go?",
+    "input": "main.go:5:6: undefined: myFunction\n",
+    "output": "The error indicates that the function 'myFunction' is not defined or imported in your code. Make sure that the function is declared and properly accessible in your code."
+  },
+  {
+    "instruction": "How to fix 'cannot assign to <expression>' error in Go?",
+    "input": "main.go:5:6: cannot assign to x\n",
+    "output": "The error occurs when you try to assign a value to an expression that cannot be assigned. Check if the expression is a constant or a value that cannot be modified, and make sure you are assigning to a valid assignable expression"
+  },
+  {
+    "instruction": "How to fix 'unexpected token' error in Go?",
+    "input": "main.go:3:10: syntax error: unexpected token '}'\n",
+    "output": "The error suggests that there is an unexpected token, in this case, the '}' character. Check your code for any missing or extra parentheses, braces, or brackets that might be causing the issue."
+  },
+  {
+    "instruction": "How to fix 'undefined: variable' error in Go?",
+    "input": "main.go:5:12: undefined: someVariable\n",
+    "output": "The error indicates that the variable 'someVariable' is not defined or imported in your code. Make sure that the variable is declared and initialized before using it."
+  },
+  {
+    "instruction": "How to fix 'cannot convert <type> to <type>' error in Go?",
+    "input": "main.go:5:16: cannot convert x (type int) to type string\n",
+    "output": "The error occurs when you try to convert a value from one type to another type that is not compatible. To fix it, make sure that the types are compatible for conversion or use appropriate conversion functions or methods."
+  },
+  {
+    "instruction": "How to fix 'missing return at end of function' error in Go?",
+    "input": "main.go:8:1: missing return at end of function\n",
+    "output": "The error occurs when a function is declared to return a value, but there is no return statement at the end of the function. To fix it, add a return statement that returns the expected value at the end of the function."
+  },
+  {
+    "instruction": "How to fix 'invalid operation: <expression> (type <type>)' error in Go?",
+    "input": "main.go:5:13: invalid operation: x (type string) == y (type int)\n",
+    "output": "The error occurs when you try to perform an invalid operation on a certain type. Check the types of the operands and ensure that the operation you are performing is valid for those types."
+  },
+  {
+    "instruction": "How to fix 'expected ';' or newline after <expression>' error in Go?",
+    "input": "main.go:3:7: expected ';' or newline after fmt.Println\n",
+    "output": "The error suggests that there is a missing semicolon or newline after a statement. Make sure to add a semicolon at the end of the line or start a new line after the statement to resolve the issue."
+  },
+  {
+    "instruction": "How to fix 'index out of range' error in Go?",
+    "input": "main.go:7:18: runtime error: index out of range\n",
+    "output": "The error occurs when you try to access an element in a collection using an index that is outside the valid range of indices. Ensure that the index is within the bounds of the collection before accessing the element."
+  },
+  {
+    "instruction": "How to fix 'unknown field' error in Go?",
+    "input": "main.go:5:2: unknown field 'someField' in struct literal of type MyStruct\n",
+    "output": "The error suggests that you are trying to assign a value to a field that does not exist in the struct type. Verify the field name and ensure that it is correctly defined in the struct declaration."
+  },
+  {
+    "instruction": "How to fix 'invalid character' error in Go?",
+    "input": "main.go:4:9: invalid character '!' after top-level declaration\n",
+    "output": "The error indicates that there is an invalid character, in this case, the exclamation mark '!'. Check your code for any characters that are not allowed in the context where it appears, such as outside a string or a comment."
+  },
+  {
+    "instruction": "How to fix 'undefined: <type>' error in Go?",
+    "input": "main.go:6:11: undefined: MyStruct\n",
+    "output": "The error suggests that the type 'MyStruct' is not defined or imported in your code. Make sure that the type is properly declared and accessible. If it is defined in another package, ensure that the package is imported correctly."
+  },
+  {
+    "instruction": "How to fix 'missing argument' error in Go?",
+    "input": "main.go:5:8: missing argument in call to myFunction\n",
+    "output": "The error occurs when you call a function without providing the required arguments. Check the function signature and make sure to pass the correct number and type of arguments when calling the function."
+  },
+  {
+    "instruction": "How to fix 'invalid operation: <type> does not support indexing' error in Go?",
+    "input": "main.go:5:9: invalid operation: x[0] (type MyType does not support indexing)\n",
+    "output": "The error suggests that you are trying to index or access elements of a type that does not support indexing, such as a custom defined type. Ensure that the type you are working with supports indexing or implement the necessary methods to enable indexing."
+  },
+  {
+    "instruction": "How to fix 'ambiguous selector' error in Go?",
+    "input": "main.go:4:9: ambiguous selector myPackage.MyFunction\n",
+    "output": "The error occurs when there is an ambiguous selector, meaning that the identifier you are trying to access can refer to multiple packages or entities. Specify the correct package or identifier to resolve the ambiguity."
+  },
+  {
+    "instruction": "How to fix 'cannot use <value> as type <type>' error in Go?",
+    "input": "main.go:5:14: cannot use true (type bool) as type int in assignment\n",
+    "output": "The error occurs when you try to assign a value of one type to a variable of a different incompatible type. Make sure that you assign a value of the correct type or use appropriate type conversion to resolve the error."
+  },
+  {
+    "instruction": "How to fix 'invalid receiver type' error in Go?",
+    "input": "main.go:5:10: invalid receiver type MyType\n",
+    "output": "The error suggests that you are trying to define a method on an invalid receiver type. Verify that the receiver type is defined and accessible, and make sure that it is a valid type on which methods can be defined."
+  },
+  {
+    "instruction": "How to fix 'missing package name' error in Go?",
+    "input": "main.go:1:8: expected 'package', found <EOF>\n",
+    "output": "The error occurs when there is a missing package name declaration at the beginning of the file. Add the 'package' statement followed by the package name to resolve the issue."
+  },
+  {
+    "instruction": "How to fix 'undefined function' error in Go?",
+    "input": "main.go:6:9: undefined: myFunction\n",
+    "output": "The error suggests that the function 'myFunction' is not defined or accessible in your code. Make sure that the function is properly declared and defined, either in the same package or in an imported package. If it is defined in another package, ensure that the package is imported correctly."
+  },
+  {
+    "instruction": "How to fix 'cannot assign to <expression>' error in Go?",
+    "input": "main.go:5:9: cannot assign to x\n",
+    "output": "The error occurs when you try to assign a value to an expression that cannot be assigned to, such as a constant or an unaddressable value. Ensure that you are assigning a value to a valid and assignable expression."
+  },
+  {
+    "instruction": "How to fix 'unreachable code' error in Go?",
+    "input": "main.go:7:2: unreachable code\n",
+    "output": "The error occurs when there is code that cannot be reached and will never be executed. Review your code for any statements or blocks of code that are logically unreachable and remove or modify them to resolve the error."
+  },
+  {
+    "instruction": "How to fix 'invalid operand' error in Go?",
+    "input": "main.go:5:13: invalid operand myVariable < 10 (operator < not defined on myVariable)\n",
+    "output": "The error suggests that the operator you are using is not defined or supported for the operand type 'myVariable'. Check the types of the operands and ensure that the operator you are using is valid for those types."
+  },
+  {
+    "instruction": "How to fix 'undefined type' error in Go?",
+    "input": "main.go:4:9: undefined: MyType\n",
+    "output": "The error indicates that the type 'MyType' is not defined or imported in your code. Make sure that the type is properly declared and accessible, either in the same package or in an imported package."
+  },
+  {
+    "instruction": "How to fix 'invalid argument' error in Go?",
+    "input": "main.go:5:8: cannot use true (type bool) as type int in argument to myFunction\n",
+    "output": "The error occurs when you pass an argument of an incorrect type to a function. Verify the expected type of the argument and ensure that you are providing a value of the correct type when calling the function."
+  },
+  {
+    "instruction": "How to fix 'uninitialized variable' error in Go?",
+    "input": "main.go:5:8: variable myVariable declared and not used\n",
+    "output": "The error suggests that you have declared a variable but did not use it anywhere in your code. Remove the declaration or make use of the variable to resolve the error."
+  },
+  {
+    "instruction": "How to fix 'not enough arguments' error in Go?",
+    "input": "main.go:6:5: not enough arguments in call to myFunction\n",
+    "output": "The error occurs when you call a function with fewer arguments than expected. Check the function signature and make sure to provide the correct number and type of arguments when calling the function."
+  },
+  {
+    "instruction": "How to fix 'undefined function' error in Go?",
+    "input": "main.go:6:9: undefined: myFunction\n",
+    "output": "The error suggests that the function 'myFunction' is not defined or accessible in your code. Make sure that the function is properly declared and defined, either in the same package or in an imported package. If it is defined in another package, ensure that the package is imported correctly."
+  },
+  {
+    "instruction": "How to fix 'cannot assign to <expression>' error in Go?",
+    "input": "main.go:5:9: cannot assign to x\n",
+    "output": "The error occurs when you try to assign a value to an expression that cannot be assigned to, such as a constant or an unaddressable value. Ensure that you are assigning a value to a valid and assignable expression."
+  },
+  {
+    "instruction": "How to fix 'unreachable code' error in Go?",
+    "input": "main.go:7:2: unreachable code\n",
+    "output": "The error occurs when there is code that cannot be reached and will never be executed. Review your code for any statements or blocks of code that are logically unreachable and remove or modify them to resolve the error."
+  },
+  {
+    "instruction": "How to fix 'invalid operand' error in Go?",
+    "input": "main.go:5:13: invalid operand myVariable < 10 (operator < not defined on myVariable)\n",
+    "output": "The error suggests that the operator you are using is not defined or supported for the operand type 'myVariable'. Check the types of the operands and ensure that the operator you are using is valid for those types."
+  },
+  {
+    "instruction": "How to fix 'undefined type' error in Go?",
+    "input": "main.go:4:9: undefined: MyType\n",
+    "output": "The error indicates that the type 'MyType' is not defined or imported in your code. Make sure that the type is properly declared and accessible, either in the same package or in an imported package."
+  },
+  {
+    "instruction": "How to fix 'invalid argument' error in Go?",
+    "input": "main.go:5:8: cannot use true (type bool) as type int in argument to myFunction\n",
+    "output": "The error occurs when you pass an argument of an incorrect type to a function. Verify the expected type of the argument and ensure that you are providing a value of the correct type when calling the function."
+  },
+  {
+    "instruction": "How to fix 'uninitialized variable' error in Go?",
+    "input": "main.go:5:8: variable myVariable declared and not used\n",
+    "output": "The error suggests that you have declared a variable but did not use it anywhere in your code. Remove the declaration or make use of the variable to resolve the error."
+  },
+  {
+    "instruction": "How to fix 'not enough arguments' error in Go?",
+    "input": "main.go:6:5: not enough arguments in call to myFunction\n",
+    "output": "The error occurs when you call a function with fewer arguments than expected. Check the function signature and make sure to provide the correct number and type of arguments when calling the function."
+  }
+]
